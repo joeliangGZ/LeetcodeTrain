@@ -1,4 +1,4 @@
-package array;
+package array.collision_pointers;
 
 public class twoSum {
 
