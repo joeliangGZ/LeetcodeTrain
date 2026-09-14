@@ -1,8 +1,10 @@
 package array_and_string.strings;
 
-public class strStr_kmp {
+public class kmpSearch {
 
-    public int strStr(String text, String pattern) {
+    public void kmpSearch(String text, String pattern) {
+
+        if(pattern == null || pattern.length() == 0) return;
 
         int m = text.length();
         int n = pattern.length();
@@ -20,12 +22,9 @@ public class strStr_kmp {
             }
 
             if(j == n) {
-                // j = lps[j-1];
-                return i - j + 1;
+                j = lps[j-1];
             }
         }
-
-        return -1;
         
     }
 
@@ -50,5 +49,5 @@ public class strStr_kmp {
         
         return lps;
     }
-}
     
+}
