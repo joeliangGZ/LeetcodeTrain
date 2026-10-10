@@ -5,19 +5,21 @@ public class findMaxConsecutiveOnes {
     public int findMaxConsecutiveOnes(int[] nums) {
 
         int n = nums.length;
-        int max = 0;
-        int slow = 0;
+
+        int slow = 0, fast = 0;
+        int maxLen = 0;
         
-        for(int fast = 0; fast < n; fast++) {
-        
-            if (nums[fast] == 0) {
-                slow = fast +1;
+        while(fast < n) {
+            if(nums[fast] == 1) {
+                maxLen = Math.max(maxLen, fast - slow + 1);
             } else {
-                max = Math.max(max, fast - slow + 1);
+                slow = fast + 1;
             }
+            
+            fast++;
         }
 
-        return max;
+        return maxLen;
         
     }
     //     slow
