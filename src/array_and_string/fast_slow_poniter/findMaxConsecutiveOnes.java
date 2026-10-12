@@ -1,4 +1,4 @@
-package array_and_string;
+package array_and_string.fast_slow_poniter;
 
 public class findMaxConsecutiveOnes {
 

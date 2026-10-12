@@ -1,4 +1,4 @@
-package array_and_string.strings;
+package array_and_string.collision_pointer;
 
 public class reverseString {
 
