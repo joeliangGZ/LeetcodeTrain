@@ -14,7 +14,7 @@ public class minSubArrayLen {
 
             total += nums[fast];
 
-            while(total >= target) {
+            while(total >= target) { 
                 minLen = Math.min(minLen, fast - slow + 1);
                 total -= nums[slow];
                 slow++;
