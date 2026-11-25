@@ -1,4 +1,4 @@
-package basic_algorithms;
+package basic_algorithms.array;
 
 public class moveZeroes {
 

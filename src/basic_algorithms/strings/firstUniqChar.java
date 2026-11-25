@@ -1,4 +1,4 @@
-package basic_algorithms;
+package basic_algorithms.strings;
 
 import java.util.HashMap;
 import java.util.Map;
